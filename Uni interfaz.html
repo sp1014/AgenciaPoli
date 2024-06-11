@@ -1,58 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UFT-8">
-    <meta <http-equiv="X-UA Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>ADV Colombiana</title>
 </head>
-
 <body>
+    <!-- HEADER O BANNER DE INCIO -->
     <header>
-    <nav>
-        <h4>ADV Colombiana</h4>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Destinos</a></li>
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Contacto</a></li> 
-            <li><a href="#">Atención al cliente</a></li>
-        </ul>
-    </nav>
-    
-    <div class="content">
-        <div class="cont_bx">
-        <h1>Agencia de Viajes: Lugares por descubrir, lugares por visitar</h1>
-        <p>Aquí encontrarás un nuevo lugar para generar muchos recuerdos. Ofrecemos los mejores paquetes turísticos para que disfrutes de tus vacaciones al máximo y de un momento inolvidable junto a tus seres queridos. Explora nuestras diferentes ofertas disponibles que tenemos para tí y encuentra tu próximo destino soñado.</p>
-        <button>Empieza tu busqueda</button>
-    </div>
-    <div class="trip_bx">
-        <div class="search_bx">
-            <div class="card">
-                <h4>Destino</h4>
-                <input type="text" placeholder="Ingrese su destino">
+        <nav>
+            <h4>ADV Colombiana</h4>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Destinos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Atención al cliente</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="cont_bx">
+                <h1>Agencia de Viajes: Lugares por descubrir, lugares por visitar</h1>
+                <p>Aquí encontrarás un nuevo lugar para generar muchos recuerdos. Ofrecemos los mejores paquetes turísticos para que disfrutes de tus vacaciones al máximo y de un momento inolvidable junto a tus seres queridos. Explora nuestras diferentes ofertas disponibles que tenemos para tí y encuentra tu próximo destino soñado.</p>
+                <button>Empieza tu búsqueda</button>
             </div>
-            <div class="card">
-                <h4>Fecha</h4>
-                <input type="date">
+            <div class="trip_bx">
+                <div class="search_bx">
+                    <div class="card">
+                        <h4>Destino</h4>
+                        <input type="text" id="search-destination" placeholder="Ingrese su destino">
+                    </div>
+                    <div class="card">
+                        <h4>Fecha</h4>
+                        <input type="date" id="search-date">
+                    </div>
+                    <div class="card">
+                        <h4>Personas</h4>
+                        <input type="number" id="search-people" placeholder="¿Cuántas personas viajarán?">
+                    </div>
+                    <input type="button" value="Explorar" id="search-button">
+                </div>
             </div>
-            <div class="card">
-                <h4>Personas</h4>
-                <input type="number" placeholder="¿Cuantas personas viajaran?">
-            </div>
-            <input type="button" value="Explorar">
         </div>
-    </div>
-    </div>
+        <section class="intro">
+            <h2>DESTINOS MÁS VISITADOS</h2>
+            <p>Descubre los destinos más populares entre nuestros clientes. ¡No te pierdas la oportunidad de visitarlos!</p>
+        </section>
     </header>
 
-<h3>Paquete a la Playa</h3>
-            <p>Disfruta de una semana en las mejores playas del Caribe con todo incluido.</p>
-            <h3>Tour por Europa</h3>
-            <p>Visita las principales ciudades europeas con un guía experto y todo planificado para ti.</p>
-            <h3>Aventura en la Montaña</h3>
-            <p>Vive una experiencia única en las montañas con actividades de aventura y naturaleza.</p>
-            <button>Empieza tu busqueda</button>
+    <div>
+    <!-- SECCIÓN DE DESTINOS -->
+    <section class="destinos" id="destinos">
+        <!-- Aquí se insertarán las cartas generadas por JavaScript -->
+    </section>
+
+    <!-- Paginador -->
+     <div class="paginator">
+        <div id="paginator"></div>
+     </div>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
+
+

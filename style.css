@@ -1,44 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'poppins';
-}*/
+    font-family: 'Poppins', sans-serif;
+}
 
-body{
+body {
     background-color: white;
-    font-family: 'poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
 }
 
-header{
-    width: 80%;
-    height: 95vh;
-    margin: auto;
+/*****************************************/
+/*************HEADER O BANNER*************/
+/*****************************************/
+
+header {
+    width: 98%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-header nav{
+header nav {
     width: 95%;
     height: 7%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
 }
 
-header nav ul{
+header nav ul {
     list-style: none;
     display: flex;
 }
 
-header nav ul li{
+header nav ul li {
     padding: 3px 15px;
 }
 
-header ul li a{
+header ul li a {
     text-decoration: none;
     color: black;
     font-size: 15px;
@@ -46,45 +56,47 @@ header ul li a{
     transition: .3s linear;
 }
 
-header ul li:hover{
+header ul li:hover {
     transform: scale(1.1);
 }
 
-header .content{
+header .content {
     position: relative;
     width: 100%;
     height: 80%;
-    
+    padding: 0;
 }
 
-header .content::before{
+header .content::before {
     content: '';
     position: absolute;
     width: 100%;
     height: 80%;
-    background: url('imagen2.jpg') no-repeat center center/cover;
+    background: url(Imagenes/beautiful-tropical-beach-sea-sand-with-coconut-palm-tree-blue-sky-white-cloud.jpg) no-repeat center center/cover;
     border-radius: 10px;
     z-index: -1;
+    padding: 0;
+    margin: 0;
 }
 
-header .content .cont_bx{
-    width: 500px ;
+header .content .cont_bx {
+    width: 500px;
     height: auto;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 30px;
 }
 
-header .content .cont_bx h1{
+header .content .cont_bx h1 {
     line-height: 40px;
     font-weight: 800;
 }
 
-header.content .cont_bx p{
+header .content .cont_bx p {
     font-size: 14px;
     font-weight: 400;
 }
 
-header .content .cont_bx button{
+header .content .cont_bx button {
     margin-top: 20px;
     padding: 10px 20px;
     border-radius: 20px;
@@ -96,20 +108,20 @@ header .content .cont_bx button{
     transition: .3s linear;
 }
 
-header .content .cont_bx button:hover{
+header .content .cont_bx button:hover {
     background: gray;
     border: 2px solid gray;
 }
 
-header .trip_bx{
+header .trip_bx {
     position: relative;
     width: 95%;
-    height: 20px ;
+    height: 20px;
     margin: auto;
-    border: 1px solid #000;
+    padding: 0;
 }
 
-header .trip_bx .search_bx{
+header .trip_bx .search_bx {
     position: absolute;
     top: 0;
     left: 0;
@@ -118,25 +130,25 @@ header .trip_bx .search_bx{
     display: flex;
     align-items: center;
     justify-content: center;
-    background:white;
+    background: white;
     border: 5px;
     box-shadow: 0px 10px 25px gray;
     z-index: 1;
     padding: 0px 10px;
 }
 
-header .trip_bx .search_bx .card{
+header .trip_bx .search_bx .card {
     width: 200px;
     height: 50px;
 }
 
-header .trip_bx .search_bx .card h4{
+header .trip_bx .search_bx .card h4 {
     font-size: 15px;
     margin: 0;
     font-weight: 700;
 }
 
-header .trip_bx .search_bx .card input{
+header .trip_bx .search_bx .card input {
     margin-top: 3px;
     padding: 5px 0px;
     border: none;
@@ -144,7 +156,7 @@ header .trip_bx .search_bx .card input{
     font-size: 10px;
 }
 
-header .trip_bx .search_bx input[type="button"]{
+header .trip_bx .search_bx input[type="button"] {
     background: #000;
     color: white;
     border: none;
@@ -152,9 +164,154 @@ header .trip_bx .search_bx input[type="button"]{
     padding: 10px 20px;
     border-radius: 20px;
     transition: .3s linear;
-    cursor: painter;
+    cursor: pointer;
 }
 
-header .trip_bx .search_bx input[type="button"]:hover{
+header .trip_bx .search_bx input[type="button"]:hover {
     background: grey;
+}
+/*****************************************/
+/*************INTRO SECCION***************/
+/*****************************************/
+
+.intro {
+    text-align: center;
+    margin-top: -80px;
+    padding: 0;
+}
+
+.intro h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.intro p {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+}
+
+/*****************************************/
+/********CARDS O TARJETAS DE TOURS********/
+/*****************************************/
+
+section.destinos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    margin-top: -80px;
+}
+
+.tours{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.tours .tour1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.tours .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.tours .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tours .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    background: rgb(0, 0, 0,.4);
+    text-align: center;
+}
+
+.tours .back{
+    transform: perspective(600px)rotateY(180deg);
+    background: rgb(0, 0, 0);
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.tours .back .link{
+    border-top: solid 1px white;
+    height: 50px;
+    line-height: 50px;
+}
+
+.tours .back .link a{
+    color: white;
+}
+
+.tours .back h3{
+    font-size: 30px;
+    margin-top:20px ;
+    letter-spacing: 2px;
+}
+
+.torus .back p{
+    letter-spacing: 1px;
+}
+
+.tours:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.tours:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.paginator{
+    justify-content: center;
+    display: flex;
+}
+
+/* Estilos para el paginador */
+#paginator {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#paginator button {
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#paginator button:hover {
+    background: #555;
+}
+
+#paginator button:disabled {
+    background: #bbb;
+    cursor: default;
 }

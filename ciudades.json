@@ -1,0 +1,15 @@
+{
+    "trips": [
+      {"id": 1, "destination": "Medellin", "date": "2024-07-15", "price": 1200, "description": "Disfruta de la hermosa ciudad de Medellín con su clima primaveral y vibrante vida cultural."},
+      {"id": 2, "destination": "Santa Marta", "date": "2024-08-20", "price": 1500, "description": "Relájate en las playas de Santa Marta y explora el Parque Nacional Natural Tayrona."},
+      {"id": 3, "destination": "Barranquilla", "date": "2024-09-10", "price": 1300, "description": "Vive la experiencia del Carnaval de Barranquilla y su alegre cultura caribeña."},
+      {"id": 4, "destination": "Cartagena", "date": "2024-10-18", "price": 1400, "description": "Descubre la historia y encanto de Cartagena de Indias, con sus calles empedradas y murallas históricas."},
+      {"id": 5, "destination": "Bogota", "date": "2024-11-05", "price": 1100, "description": "Explora la capital de Colombia, Bogotá, y sus numerosas actividades culturales y recreativas."},
+      {"id": 6, "destination": "Cali", "date": "2024-12-15", "price": 1200, "description": "Sumérgete en la salsa y el ambiente festivo de Cali, la 'Capital Mundial de la Salsa'."},
+      {"id": 7, "destination": "Bucaramanga", "date": "2024-01-10", "price": 1000, "description": "Disfruta de los parques y la arquitectura colonial de Bucaramanga."},
+      {"id": 8, "destination": "Pereira", "date": "2024-02-20", "price": 1300, "description": "Conoce la cultura cafetera y los hermosos paisajes de Pereira."},
+      {"id": 9, "destination": "Manizales", "date": "2024-03-15", "price": 1250, "description": "Explora las montañas y el arte en la ciudad de Manizales, conocida por sus festivales."},
+      {"id": 10, "destination": "Armenia", "date": "2024-04-25", "price": 1150, "description": "Visita Armenia y sus alrededores, en el corazón de la región cafetera colombiana."}
+    ]
+  }
+  
