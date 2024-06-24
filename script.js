@@ -65,8 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const linkDiv = document.createElement('div');
             linkDiv.classList.add('link');
             const a = document.createElement('a');
-            a.href = '#';
+            //a.click = openModal(trip);
             a.textContent = 'Detalles';
+            a.addEventListener('click', () => openModal(trip));
             linkDiv.appendChild(a);
             backDiv.appendChild(h3Back);
             backDiv.appendChild(p);
@@ -95,4 +96,39 @@ document.addEventListener('DOMContentLoaded', () => {
             paginator.appendChild(pageButton);
         }
     }
+
+    function openModal(trip) {
+        const modal = document.getElementById('myModal');
+        const modalContent = document.getElementById('modal-content');
+
+        // Mostrar la imagen y la descripción del destino en el modal
+        modalContent.innerHTML = `
+          <h2>${trip.destination}</h2>
+          <img src="Imagenes/${trip.destination}.jpg" class="imgModal" alt="${trip.destination}">
+           <p>${trip.description}</p>
+           <br>
+           <div class="flex">
+           <p>Precio:</p><p>${trip.price}</p>
+           </div>
+           <div class="flex">
+           <p>Fecha:</p><p>${trip.date}</p>
+           </div>
+        `;
+
+        modal.style.display = 'block';
+
+        // Agregar evento para cerrar el modal haciendo clic en el botón de cierre (X)
+        const span = document.getElementsByClassName('close')[0];
+        span.onclick = function() {
+            modal.style.display = 'none';
+        };
+
+        // Cerrar el modal si el usuario hace clic fuera del área del modal
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        };
+    }
 });
+
