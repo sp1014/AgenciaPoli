@@ -72,7 +72,7 @@ header .content::before {
     position: absolute;
     width: 100%;
     height: 80%;
-    background: url(Imagenes/beautiful-tropical-beach-sea-sand-with-coconut-palm-tree-blue-sky-white-cloud.jpg) no-repeat center center/cover;
+    background: url(Imagenes/) no-repeat center center/cover;
     border-radius: 10px;
     z-index: -1;
     padding: 0;
