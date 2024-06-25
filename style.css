@@ -23,7 +23,7 @@ body {
 /*****************************************/
 
 header {
-    width: 98%;
+    width: 95%;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -35,13 +35,14 @@ header nav {
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
 }
 
 header nav ul li {
@@ -72,7 +73,7 @@ header .content::before {
     position: absolute;
     width: 100%;
     height: 80%;
-    background: url(Imagenes/alejandro-ortiz-19aBHDuqJIY-unsplash.jpg) no-repeat center center/cover;
+    background: url(/Imagenes/shifaaz-shamoon-Rl9l9mL6Pvs-unsplash.jpg) no-repeat center center/cover;
     border-radius: 10px;
     z-index: -1;
     padding: 0;
@@ -82,7 +83,7 @@ header .content::before {
 header .content .cont_bx {
     width: 500px;
     height: auto;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 30px;
 }
 
@@ -119,12 +120,12 @@ header .trip_bx {
     height: 20px;
     margin: auto;
     padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 header .trip_bx .search_bx {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 60%;
     height: 60px;
     display: flex;
@@ -135,6 +136,7 @@ header .trip_bx .search_bx {
     box-shadow: 0px 10px 25px gray;
     z-index: 1;
     padding: 0px 10px;
+    
 }
 
 header .trip_bx .search_bx .card {

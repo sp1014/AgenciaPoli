@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atención al cliente</title>
+    <link rel="stylesheet" href="StylesAC.css">
+    <script defer src="scriptAT.js"></script>
+</head>
+<body>
+    <form onsubmit="validarFormulario(event)">
+        <h2>ATENCIÓN AL CLIENTE</h2>
+        <!-- Información Básica -->
+        <fieldset class="infobasica">
+            <legend>INFORMACIÓN BÁSICA</legend>
+            <div class="form_input">
+                <label>Nombre completo
+                    <input type="text" id="nombre" placeholder="Escribe nombre y apellidos" required>
+                </label>
+            </div>
+            <div class="form_input">
+                <label>CC
+                    <input type="text" id="CC" placeholder="Escribe tu número de cedula sin puntos" required>
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Correo electronico
+                    <input type="email" id="correo" placeholder="ejemplo@gmail.com" required>
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Tipo De cliente
+                    <select name="Tipo de cliente" required>
+                        <option value="">Seleccione</option>
+                        <option value="Frecuente">Frecuente</option>
+                        <option value="Casual">Casual</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Tipo De Atención
+                    <select name="Tipo de atención" required>
+                        <option value="">Seleccione</option>
+                        <option value="Sugerencia">Sugerencia</option>
+                        <option value="Queja">Queja</option>
+                        <option value="Reclamo">Reclamo</option>
+                        <option value="Demanda">Demanda</option>
+                        <option value="Felicitación">Felicitación</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Mensaje
+                    <textarea id="mensaje" placeholder="Redacte detalladamente su Mensaje" required></textarea>
+                </label>
+            </div>
+        </fieldset>
+        <div class="enviar-container">
+            <button type="submit" id="enviar" class="enviar">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #333;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 22px;
+    padding: 10px;
+    padding-bottom: 30px;
+    color: #444;
+}
+
+form {
+    background-color: #fff;
+    padding: 10px 0;
+    padding-bottom: 30px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.form_input {
+    padding: 6px 20px;
+}
+
+input, select, textarea {
+    width: 90%;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #333;
+    border-radius: 4px;
+}
+
+textarea {
+    min-width: 100%;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+option {
+    background-color: #fff;
+    color: #333;
+}
+
+label {
+    padding-right: 50px;
+    font-size: 0.9em;
+    line-height: 2;
+    color: #555;
+}
+
+legend {
+    padding: 0 6px;
+    color: #555;
+}
+
+.infobasica {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 20px 20px;
+    margin-left: 15%;
+    width: 70%;
+    background-color: #f9f9f9;
+}
+
+.enviar-container {
+    text-align: right;
+    padding: 10px 20px;
+}   
+
+.enviar {
+    padding: 10px 20px;
+    background-color: rgb(139, 139, 209);
+    color: #fdfdfd;
+    border: none;   
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0px 6px rgb(245, 242, 242);
+}
+
+.enviar:hover {
+    border: 1px solid rgb(194, 190, 190);
+    background-color: #fdfdfd;
+    box-shadow: 0 0px 10px  rgb(248, 247, 247);
+    color: rgb(139, 139, 209);
+}
+
+
